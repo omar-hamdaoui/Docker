@@ -5,7 +5,7 @@ services:
             - admin_password
             - secret_key
         ports:
-            - 8055:8055
+            - 8899:8899
         volumes:
             - ./database:/directus/database
             - ./uploads:/directus/uploads
