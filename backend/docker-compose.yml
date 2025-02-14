@@ -5,14 +5,14 @@ services:
             - admin_password
             - secret_key
         ports:
-            - 8899:8899
+            - 8055:8055
         volumes:
             - ./database:/directus/database
             - ./uploads:/directus/uploads
             - ./extensions:/directus/extensions
         environment:
             SECRET_FILE: /run/secrets/secret_key
-            ADMIN_EMAIL: "mauro.longano@marconirovereto.it"
+            ADMIN_EMAIL: "omar.hamdaoui@marconirovereto.it"
             ADMIN_PASSWORD_FILE: /run/secrets/admin_password
             DB_CLIENT: "sqlite3"
             DB_FILENAME: "/directus/database/data.db"
